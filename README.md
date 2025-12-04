@@ -13,10 +13,21 @@ The program processes expressions in three steps:
 
 ## How To Run
 
+(Using Windows CMD)
 1. cd into the project Folder: (Ex. cd "C:\Users\Owner\OneDrive\Desktop\CSC 220\Compiler 220\src")
 2. Compile all Files: javac compiler\*.java compiler\ast\*.java
 3. Run: java compiler.Compiler
+   
+(Using Powershell)
+1. cd into project folder
+2. javac -cp . -d . (Get-ChildItem -Recurse -Filter *.java | ForEach-Object { $_.FullName })
+3. java -cp . compiler.Compiler
 
+(Mac or Linux)
+1. cd into project folder (Ex. cd "/Users/owner/Desktop/CSC 220/Compiler 220")
+2. javac -cp . $(find . -name "*.java")
+3. java -cp . compiler.Compiler
+   
 ## Example
 
 Input: `(3 + 2) * 5 - 1`
