@@ -11,6 +11,12 @@ The program processes expressions in three steps:
 2. **Parser** - Checks if the expression follows proper grammar rules and builds a tree
 3. **Evaluator** - Calculates the result by traversing the tree
 
+## How To Run
+
+1. cd into the project Folder: (Ex. cd "C:\Users\Owner\OneDrive\Desktop\CSC 220\Compiler 220\src")
+2. Compile all Files: javac compiler\*.java compiler\ast\*.java
+3. Run: java compiler.Compiler
+
 ## Example
 
 Input: `(3 + 2) * 5 - 1`
@@ -22,7 +28,7 @@ Parse Result: SUCCESS
 Expression Tree: (((3.0 + 2.0) * 5.0) - 1.0)
 Evaluation Result: 24.0
 ```
-
+   
 ## Supported Operations
 
 - Basic operators: `+`, `-`, `*`, `/`
